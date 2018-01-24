@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udacity_background"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/TopImage"
+        android:src="@drawable/udacity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/TopText1"
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TopImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/grow1"
+        />
+
+    <TextView
+        android:id="@+id/TopText2"
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TopText1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/grow2"
+        />
+
+    <TextView
+        android:id="@+id/Address"
+        style="@style/BodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TopText2"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/address"
+        />
+
+    <TextView
+        android:id="@+id/Phone"
+        style="@style/BodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Address"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:text="@string/phone"
+        />
+
+    <TextView
+        android:id="@+id/Website"
+        style="@style/BodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/url"
+        />
+
+</RelativeLayout>
